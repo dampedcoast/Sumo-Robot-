@@ -141,17 +141,4 @@ Designed for opponents with flags or a wide front that fool the side sensors.
 
 ---
 
-## Known Issues / TODO
 
-- **Left MZ80 on D1** — D1 is the hardware Serial TX pin, and `Serial` is active. This can corrupt the left sensor reading. Move it to a free digital pin.
-- **Heavy Serial output** — printing sensor tables every loop at 9600 baud slows the loop noticeably. Disable debug prints for competition or raise the baud rate.
-- **Sit and Wait never stops** — after losing the opponent, the motors keep their last command (e.g. keep spinning). Add a `DriveMotors(0, 0)` in the "nothing detected" case.
-- **Blocking code ignores the line** — `RunSearch()`, `Onwhite()` and the Flags turn use `delay()` / busy loops, during which edge sensors are not checked.
-- `SIT_DISTANCE` is defined but not used yet.
-- The `searching` flag in Sit and Search is redundant because `RunSearch()` is blocking.
-
----
-
-## License
-
-Add your license here (e.g. MIT).
