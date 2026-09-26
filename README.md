@@ -23,7 +23,7 @@ Worm gear motors are self-locking, so the robot is hard to push backwards when s
 
 | Signal | Pin | Notes |
 |---|---|---|
-| MZ80 Left | D1 | ⚠️ Shares Serial TX — see Known Issues |
+| MZ80 Left | D1 | 
 | MZ80 Front | D14 | |
 | MZ80 Right | D12 | |
 | QTR Right | A4 | Analog, white < `WHITE_THRESHOLD` |
